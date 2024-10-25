@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* text-align: center; */
+    /* background-color: white; */
+}
+.images{
+    display: flex;
+    flex-direction: column;
+}
+.images p{
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-image: url('photos/paints-hare-figurine.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    /* Adjust as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.09)
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.logo {
+    position: absolute;
+    top: 50px;
+    /* Adjust as needed */
+    text-align: center;
+    color: black;
+    background-image: url();
+}
+
+.logo h1 {
+    font-size: 48px;
+    letter-spacing: 2px;
+}
+
+.logo p {
+    font-family: 'Cursive', sans-serif;
+    font-size: 24px;
+    font-style: italic;
+    margin-top: -10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    /* Adjust the spacing between links */
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.nav-links a.active {
+    color: red;
+    /* Active link in red */
+}
+
+.nav-links a:hover {
+    color: red;
+    /* Hover effect */
+}
+
+/* css for mmain body*/
+.about-gallery {
+    margin-top: 100px;
+}
+
+.center-box {
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+    /* background-color: black; */
+    border: 50px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-box a {
+    /* color: white; */
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.description {
+    margin: 20px auto;
+    width: 60%;
+    font-size: 13px;
+    color: #666;
+    line-height: 28px;
+}
+
+.introduction {
+    margin-top: 50px;
+}
+
+.introduction h2 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.line {
+    width: 40px;
+    height: 2px;
+    background-color: red;
+    margin: 10px auto;
+}
+
+/* css for photo grid*/
+.heading {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin: 50px 10px 30px 670px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+.images:hover{
+    transform: scale(1.02);
+}
+
+.view-more {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px;
+    
+}
+.top_{
+    display: flex;
+}
+#buy_sell_btn{
+    /* display: inline-block;
+    margin-top: 20px; */
+    /* padding: 10px 20px; */
+    /* background-color: black; */
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin:210px 300px 0px 100px;
+}
+#buy_sell_btn  a{
+    text-decoration: none;
+    color: white;
+}
+#buy_sell_btn button{
+    background-color: black; 
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+.photo_grid p{
+    margin-bottom: 40px;
+    text-align: center;
+}
+#contact{
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    /* background-color: black; */
+    border: 35px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 700px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+/* css for contact form*/
+.contact-form {
+    width: 60%;
+    margin: 100px auto;
+    text-align: center;
+    /* display: flex; */
+}
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 16px;
+}
+textarea {
+    height: 200px;
+    resize: none;
+}
+.submit-btn {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: white;
+    border: 1px solid #000;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.submit-btn:hover {
+    background-color: #000;
+    color: white;
+}
+@media (max-width: 768px) {
+    .form-group {
+        flex-direction: column;
+    }
+}
+/* css for footer */
+footer {
+    background-color: black;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+footer p {
+    margin: 10px 0;
+    font-size: 18px;
+    line-height: 20px;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 80px;
+}
+footer a:hover {
+    color: gray;
+}
+.social-links {
+    margin-top: 20px;
+}
+.copyright {
+    margin-top: 30px;
+    font-size: 14px;
+} 
