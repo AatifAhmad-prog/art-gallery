@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset{
+            border:2px solid wheat;
+            border-radius: 20px;
+            background-color: rgb(252, 233, 199);
+            margin: auto;
+            border-width: 10px;
+            box-shadow: -10px -10px 50px;
+            transition: transform 0.3s,box-shadow 0.3s;
+            width:300px;
+            height:400px;
+            
+        }
+        fieldset:hover{
+            transform: translateY(20px);
+        }
+        body{
+            background-color: rgb(204, 199, 190);
+        }
+        #rh1{
+            margin: auto;
+        }
+        #n5:hover{
+            background-color: rgb(234, 246, 234);
+        }
+        #n1{
+            
+            border-radius: 3px;
+            width:250px;
+        }
+        #n2{
+            
+            border-radius: 3px;
+            width:250px;
+        }
+        #n3{
+            
+            border-radius: 3px;
+            width:250px;
+        }
+        
+        #n5{
+            width:150px;
+            
+        }
+        #n6{
+            text-align: center;
+            border-radius: 5px;
+            width:85px;
+            background-color: black;
+            color:white;
+        }
+    
+        
+    </style>
+</head>
+<body>
+    <script>
+        function data()
+        {
+            var a = document.getElementById("n1").value;
+            var b = document.getElementById("n2").value;
+            var c = document.getElementById("n3").value;
+            var d = document.getElementById("n4").value;
+            var e = document.getElementById("n5").value;
+        
+        if (a == ""||b == ""||c == ""||d == "" )
+            {
+                alert("all fields are mendatory!!")
+                return false;
+            }
+        else if(c.length>10||c.length<10)
+            {
+                alert("number should be of 10 digits only!!")
+                return false;
+            }
+        else if(isNaN(c))
+            {
+                alert("only numbers are allowed!!")
+                return false;
+            }   
+        else
+            {
+                true;
+            }
+        }    
+    </script>
+    <form onsubmit="return data()" action="index.html">
+        <fieldset>
+           <center><marquee><h1 id="rh1">"SELL FOR AUCTION"</h1></marquee> </center>
+            <label for="name"><b>Name:</b></label><br>
+            <input type="text" id="n1" placeholder="Name" name="myname"><br><br>
+            <label for="email"><b>Email:</b></label><br>
+            <input type="text" id="n2" placeholder="Email" name="myemail"><br><br>
+            <label for="number"><b>Number:</b></label><br>
+            <input text="number" id="n3" placeholder="Number" name="mynumber"><br><br>
+            <label for="image name"><b>Image Type:</b></label><br>
+            <select id="image">
+                <option>select</option>
+                <option>Abstract image</option>
+                <option>Black image</option>
+                <option>Romantic image</option>
+                <option>Nature image</option>
+                <option>Painting image</option>
+                <option>Traditional image</option>
+                <option>Other images</option>/</select><br><br>
+                <label for="file"><b>File:</b></label><br>
+                <input type="file"  id= "n4" name="myfile" required><br><br>
+                <label for="set selling price"><b>Set Selling Price:</b></label><br>
+                <input type="number" id="n5" placeholder="Amount in $" name="mynumber"><br><br>
+                <center>
+                <input type="submit" value="SELL NOW" id="n6"></center>
+            </select>
+        </fieldset>
+    </form>
+</body>
+</html>
